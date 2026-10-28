@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Student Report Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="login"><div class="card"><h3 class="bl">🎓 Student Report Card — Login</h3>
+<input id="lu" placeholder="Username" value="admin"><input id="lp" type="password" placeholder="Password" value="admin123">
+<button class="btn b" onclick="login()">Login</button><small style="color:var(--mu)">Demo login: admin / admin123</small></div></div>
+<header>
+<div class="logo"><span>🎓</span><div><b>Student Report Card</b><small id="yr"></small></div></div>
+<div class="sb"><input id="q" placeholder="Search by PRN Number..." onkeydown="if(event.key==='Enter')hs()"><button onclick="hs()" aria-label="Search">🔍</button></div>
+<button class="btn g" onclick="go('add')">＋ Add Student</button>
+<button class="btn b" onclick="pr()">🖨 Print Report</button>
+<button class="btn r" onclick="logout()">⎋ Logout</button>
+</header>
+<div class="wrap">
+<nav id="nav"></nav>
+<main id="m"></main>
+</div>
+<footer id="ft"></footer>
+<div id="toast"></div>
+<script src="script.js"></script></body></html>
